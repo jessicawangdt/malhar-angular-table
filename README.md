@@ -118,7 +118,7 @@ The columns should be an array of Column Definition Objects. The order in which 
 | format       | `function` or `string` | no       | ''            | If specified, defines cell format function. See the *Cell Formatting* section below.   |
 | width        | `string` or `number`   | no       | 'auto'        | width of column, can include units, e.g. '30px'                                        |
 | lockWidth    | `boolean`              | no       | false         | If true, column will not be resizable.                                                 |
-| alert        | `function`             | no       | false         | If true, text in column show in red color.                                             |
+| alert        | `function`             | no       | false         | If true, text in column will be red.                                                   |
 | ngFilter     | `string`               | no       | undefined     | Name of a registered filter to use on row[column.key]                                  |
 | template     | `string`               | no       | undefined     | A string template for the cell contents                                                |
 | templateUrl  | `string`               | no       | undefined     | A template url used with ng-include for cell contents                                  |
