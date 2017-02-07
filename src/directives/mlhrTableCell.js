@@ -49,6 +49,11 @@ angular.module('datatorrent.mlhrTable.directives.mlhrTableCell', [
     else {
       cellMarkup = '{{ row[column.key] }}';
     }
+    
+    if (column.alert) {
+      cellMarkup = '<span ng-if="column.alert(row[column.key])" style="color:red">' + cellMarkup + '</span>';
+    }
+
     element.html(cellMarkup);
     $compile(element.contents())(scope);
   }
