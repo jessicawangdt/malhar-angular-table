@@ -85,7 +85,7 @@ angular.module('datatorrent.mlhrTable.ghPage')
         filter: 'number',
         sort: 'number',
         alert: function(value) {
-          if (value > 150 || value < 100) {
+          if (value > 200 || value < 100) {
             return true;
           } else {
             return false;
