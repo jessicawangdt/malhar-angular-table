@@ -48,6 +48,10 @@
   text-align: center;
 }
 
+.mlhr-table tr.odd{
+  background-color: #EFEFEF;
+}
+
 /* search input */
 .mlhr-table tr.mlhr-table-filter-row td input {
   max-width: 100%;
