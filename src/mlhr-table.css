@@ -48,8 +48,13 @@
   text-align: center;
 }
 
-.mlhr-table tr.odd{
+.mlhr-table tr.odd {
   background-color: #EFEFEF;
+}
+
+.mlhr-table tr.highlight {
+  background-color: #5bc0de; 
+  color: #ffffff;
 }
 
 /* search input */

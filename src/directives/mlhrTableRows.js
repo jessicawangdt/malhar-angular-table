@@ -43,6 +43,12 @@ angular.module('datatorrent.mlhrTable.directives.mlhrTableRows',[
     // | limitTo:rowLimit
     visible_rows = limitTo(visible_rows, scope.rowLimit + Math.ceil(scope.rowOffset % 1));
 
+    for (var i = 0; i < visible_rows.length; i++) {
+      if (scope.options.highlightRow(visible_rows[i])) {
+        visible_rows[i].highlight = true;
+      }
+    }
+
     return visible_rows;
   }
 
